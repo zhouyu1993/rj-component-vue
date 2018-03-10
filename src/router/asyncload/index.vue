@@ -32,7 +32,7 @@ export default {
   methods: {
     async fetch1 () {
       try {
-        await this.$$asyncload('http://code.jquery.com/jquery-3.2.1.slim.min.js', () => {
+        await this.$$asyncload('//code.jquery.com/jquery-3.2.1.slim.min.js', () => {
           const $ = window.$
           $('.jquery-div1').html(1)
         }, false)
@@ -43,7 +43,7 @@ export default {
     },
     async fetch2 () {
       try {
-        await this.$$asyncload('http://xx.com/a.js', () => {
+        await this.$$asyncload('//xx.com/a.js', () => {
           const $ = window.$
           $('.jquery-div2').html(1)
         }, true)

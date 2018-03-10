@@ -22,7 +22,7 @@ export default {
   },
   data () {
     return {
-      url1: 'http://zhouyu1993.github.io/',
+      url1: 'http://www.baidu.com/',
       url2: 'https://zhouyu1993.github.io/',
     }
   },

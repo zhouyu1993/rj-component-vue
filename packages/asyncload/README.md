@@ -23,12 +23,12 @@ Vue.prototype.$$asyncload = asyncload
 
 ## Example
 
-[Example 传送门](http://zhouyu1993.github.io/rjcv/asyncload)
+[Example 传送门](https://zhouyu1993.github.io/rjcv/#/asyncload)
 
 ``` js
 async loadjquery () {
   try {
-    await this.$$asyncload('http://code.jquery.com/jquery-3.2.1.slim.min.js', () => {
+    await this.$$asyncload('//code.jquery.com/jquery-3.2.1.slim.min.js', () => {
       const $ = window.$
       const body = $('body')
       body.html(body.width())

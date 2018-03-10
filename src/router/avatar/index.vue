@@ -41,7 +41,7 @@ export default {
     this.lazyUpdate = +new Date()
 
     setTimeout(() => {
-      this.pics.push('http://activpic-10004025.image.myqcloud.com/4faa4608-b48e-442e-b177-e12defa1846a')
+      this.pics.push('https://activpic-10004025.image.myqcloud.com/4faa4608-b48e-442e-b177-e12defa1846a')
     }, 500)
   },
 }

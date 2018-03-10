@@ -24,7 +24,7 @@ Vue.prototype.$$imageview = imageview
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/imageview)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/imageview)
 
 ``` html
 <img :src="src1 | imageview(300, 160, 'png', 1)">

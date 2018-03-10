@@ -24,7 +24,7 @@ Vue.component(loadingicon.name, loadingicon)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/loadingicon)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/loadingicon)
 
 ``` html
 <rjcv-loadingicon />

@@ -23,7 +23,7 @@ Vue.prototype.$$log = log
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/log)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/log)
 
 ``` js
 export default {

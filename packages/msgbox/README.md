@@ -26,7 +26,7 @@ Vue.prototype.$$msgbox = msgbox(Vue)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/msgbox)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/msgbox)
 
 ``` html
 <rjcv-button @click.native="open1">显示msgbox</rjcv-button>

@@ -23,7 +23,7 @@ Vue.prototype.$$map = map
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/map)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/map)
 
 ``` html
 <rjcv-button @click.native="open1">open</rjcv-button>
@@ -153,7 +153,7 @@ option 的属性有：
 | zoomEnable | Boolean | 是否可缩放 | false | true |
 | zoom | Number | 地图倍数 | false | 14 |
 
-其他参数见 [高德地图 Map 类](http://lbs.amap.com/api/javascript-api/reference/map)
+其他参数见 [高德地图 Map 类](//lbs.amap.com/api/javascript-api/reference/map)
 
 #### map.route
 

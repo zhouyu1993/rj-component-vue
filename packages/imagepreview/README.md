@@ -24,7 +24,7 @@ Vue.component(imagepreview.name, imagepreview)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/imagepreview)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/imagepreview)
 
 ``` html
 <rjcv-imagepreview v-model="visible" :visible="visible" :pics="pics" />

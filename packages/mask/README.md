@@ -24,7 +24,7 @@ Vue.component(mask.name, mask)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/mask)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/mask)
 
 ``` html
 <rjcv-mask v-model="visible1" :visible="visible1" @mask="mask1">

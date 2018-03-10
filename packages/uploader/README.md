@@ -26,7 +26,7 @@ Vue.component(uploader.name, uploader)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/uploader)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/uploader)
 
 ``` html
 <rjcv-uploader :maxNum="9" @success="success" @fail="fail" />

@@ -23,7 +23,7 @@ Vue.directive('lazyloading', lazyloading)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/lazyloading)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/lazyloading)
 
 ``` html
 <image v-lazyloading="update" :lazy-src="src" :lazy-el="el" :lazy-defaultSrc="defaultSrc">
@@ -61,7 +61,7 @@ export default {
   created () {
     // 请求数据
     setTimeout(() => {
-      this.src = 'http://cmspic-10003009.image.myqcloud.com/8c4fe37e-fee0-481d-95ac-980f52487fea'
+      this.src = '//cmspic-10003009.image.myqcloud.com/8c4fe37e-fee0-481d-95ac-980f52487fea'
       // 数据加载成功渲染页面，将真实内容显示
       this.loadingOut = true
       // 将 v-loading 改为 hide 状态

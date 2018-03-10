@@ -24,7 +24,7 @@ Vue.component(card.name, card)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/card)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/card)
 
 ``` html
 <rjcv-card :src="src" :lazyUpdate="lazyUpdate" title="大家一起来提前预约孩子王的私人订制2018台历宝宝（黑金免费）" :desc="`$${+new Date()}`" price="¥10或1000积分">

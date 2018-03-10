@@ -24,7 +24,7 @@ Vue.component(image.name, image)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/image)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/image)
 
 ``` html
 <rjcv-image />

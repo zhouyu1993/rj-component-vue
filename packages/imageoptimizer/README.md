@@ -24,7 +24,7 @@ Vue.prototype.$$imageoptimizer = imageoptimizer
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/imageoptimizer)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/imageoptimizer)
 
 ``` html
 <img :src="src1 | imageoptimizer(300, 160)">

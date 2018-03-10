@@ -27,7 +27,7 @@ Vue.component(badgeitem.name, badgeitem)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/badge)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/badge)
 
 ``` html
 <rjcv-badge @badgeClick="handleBadgeClick">

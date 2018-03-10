@@ -24,7 +24,7 @@ Vue.component(avatar.name, avatar)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/avatar)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/avatar)
 
 ``` html
 <rjcv-avatar />

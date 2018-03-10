@@ -24,7 +24,7 @@ Vue.prototype.$$protocol = protocol
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/protocol)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/protocol)
 
 ``` html
 <div>

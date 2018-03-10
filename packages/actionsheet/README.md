@@ -24,7 +24,7 @@ Vue.component(actionsheet.name, actionsheet)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/actionsheet)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/actionsheet)
 
 ``` html
 <rjcv-actionsheet v-model="visible" :visible="visible" :actions="actions"></rjcv-actionsheet>

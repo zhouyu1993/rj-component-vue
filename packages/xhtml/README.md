@@ -23,7 +23,7 @@ Vue.directive('xhtml', xhtml)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/xhtml)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/xhtml)
 
 ``` html
 <template>
@@ -35,7 +35,7 @@ Vue.directive('xhtml', xhtml)
   export default {
     data () {
       return {
-        xhtmls1: '<p><img src="http://activpic-10004025.image.myqcloud.com/98f25978-c602-419b-a174-4509019147e7">图片</p>',
+        xhtmls1: '<p><img src="//activpic-10004025.image.myqcloud.com/98f25978-c602-419b-a174-4509019147e7">图片</p>',
         xhtmls2: {
           xhtml: '你好<p><img src="https://cmspic-10003009.image.myqcloud.com/9d869ad0-64a1-4feb-8a93-bd0a6bd2b741"></p>我也好',
           width: 600,

@@ -24,7 +24,7 @@ Vue.component(switcher.name, switcher)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/switcher)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/switcher)
 
 ``` html
 <rjcv-switcher v-model="value" :value="value" />

@@ -24,7 +24,7 @@ Vue.component(icon.name, icon)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/icon)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/icon)
 
 ``` html
 <rjcv-icon name="camera" style="color: red" />

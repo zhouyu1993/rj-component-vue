@@ -26,7 +26,7 @@ Vue.directive('loadingdirective', loadingdirective(Vue))
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/loadingdirective)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/loadingdirective)
 
 ``` html
 <div v-loading="visible1" :loading-text="text1"></div>

@@ -24,7 +24,7 @@ Vue.component(star.name, star)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/star)
+[Example 传送门](//zhouyu1993.github.io/rjcv/#/star)
 
 ``` html
 <rjcv-star v-model="score" :score="score" />
