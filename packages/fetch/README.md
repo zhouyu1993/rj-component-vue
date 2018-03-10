@@ -57,7 +57,7 @@ methods: {
 |:---|:---|:---|:---|:---|
 | url | String | 接口地址 | true | - |
 | data | Object | 接口参数 | false | - |
-| options | Object | fetch参数 | false | `fetchOptions` |
+| options | Object | fetch参数 | false | `defaultOptions` |
 
 `defaultOptions` 关联 `Request` 属性。
 
