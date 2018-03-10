@@ -1,0 +1,83 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-msgbox {
+  .rjcv-popup-core {
+    width: rem(500);
+    text-align: center;
+    background-color: #fff;
+
+    &.rjcv-popup-nomask {
+      border: 1px solid #ddd;
+    }
+  }
+
+  .rjcv-msgbox-content {
+    @include nativeborder(bottom);
+    padding: rem(40) rem(50) rem(30);
+
+    .rjcv-msgbox-title {
+      font-size: $font-size-xxxl;
+      color: $text-color-primary;
+    }
+
+    .rjcv-msgbox-message {
+      margin-top: rem(15);
+      font-size: $font-size-l;
+      color: $text-color-secondary;
+
+      &.rjcv-msgbox-tm {
+        margin-top: 0;
+        color: $text-color-primary;
+      }
+    }
+
+    .rjcv-msgbox-input {
+      margin-top: rem(26);
+    }
+
+    .rjcv-msgbox-inputEl {
+      display: block;
+      width: 100%;
+      padding: rem(10);
+      font-family: $font-family;
+      font-size: $font-size-xxs;
+      line-height: 1.5;
+      color: $text-color-secondary;
+      background-color: #fff;
+      border: 1px solid $divide-color;
+      outline: 0;
+      box-sizing: border-box;
+      appearance: none;
+
+      &::placeholder {
+        color: $text-color-assistant;
+      }
+    }
+
+    .rjcv-msgbox-errormsg {
+      margin-top: rem(10);
+      font-size: $font-size-l;
+      color: $tip-color;
+    }
+  }
+
+  .rjcv-msgbox-btns {
+    display: flex;
+
+    .rjcv-msgbox-cancel, .rjcv-msgbox-confirm {
+      flex: 1;
+      background-color: #fff;
+    }
+
+    .rjcv-msgbox-cancel {
+      @include nativeborder(right);
+      color: $text-color-primary;
+    }
+
+    .rjcv-msgbox-confirm {
+      color: $kw-color-primary;
+    }
+  }
+}

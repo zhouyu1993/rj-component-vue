@@ -1,0 +1,218 @@
+# [linter-sass-lint](https://atom.io/packages/linter-sass-lint)
+# [sass-lint-rules](https://github.com/sasstools/sass-lint/tree/develop/docs/rules)
+# [order](https://github.com/sasstools/sass-lint/tree/master/lib/config/property-sort-orders)
+# [recess.yml](https://github.com/sasstools/sass-lint/blob/develop/lib/config/property-sort-orders/recess.yml)
+# [recess](https://github.com/twitter/recess)
+##############################################################
+files:
+  include:
+    - '**/*.s+(a|c)ss'
+    - '**/*.vue'
+rules:
+  # 属性选择器 input[type=file] 不带引号
+  attribute-quotes:
+    - 1
+    -
+      include: false
+  # bem 命名最大深度 禁用
+  bem-depth: 0
+  # 零边框设置为 0 而非 none
+  border-zero:
+    - 1
+    -
+      convention: '0'
+  # 选择器后空格接 { 而非换行; 不允许单行
+  brace-style: 0
+  # 选择器不允许下划线 _ 开头; 只能小写, 只能用连识符 - 连接
+  class-name-format: 0
+  # import 文件的文件名不允许下划线开头, 不允许带后缀名
+  clean-import-paths: 0
+  # 当前样式声明必须在子级嵌套之前
+  declarations-before-nesting: 1
+  # mixin 无参数时也要加 ()
+  empty-args:
+    - 1
+    -
+      include: true
+  # 同级 {} 之间 要有空行; 不允许单行
+  empty-line-between-blocks:
+    - 1
+    -
+      include: true
+      allow-single-line-rulesets: false
+  # @extend 继承必须在当前样式声明之前
+  extends-before-declarations: 1
+  # @extend 继承必须在 @mixins 混合声明之前
+  extends-before-mixins: 1
+  # 最后一行留空行
+  final-newline:
+    - 1
+    -
+      include: true
+  # 强制属性选择器使用嵌套写法
+  force-attribute-nesting: 1
+  # 强制元素选择器使用嵌套写法
+  force-element-nesting: 1
+  # 强制伪类选择器使用嵌套写法
+  force-pseudo-nesting: 0
+  # @function 函数名的强制格式 不允许下划线 _ 开头; 只能小写, 只能用连识符 - 连接
+  function-name-format: 0
+  # 十六进制值 color 值等的长度能短就要短
+  hex-length:
+    - 1
+    -
+      style: short
+  # 十六进制值 color 值等采用小写
+  hex-notation:
+    - 1
+    -
+      style: lowercase
+  # id 选择器命名强制格式 不允许下划线 _ 开头; 只能小写, 只能用连识符 - 连接
+  id-name-format: 0
+  # 缩进 4 spaces / 1 tab
+  indentation:
+    - 0
+    -
+      size: 2
+  # 浮点数 小数点前不加 0
+  leading-zero: 0
+  # 文件行数 禁用
+  max-file-line-count: 0
+  # 单行长度 禁用
+  max-line-length: 0
+  # @mixin 混合声明的强制格式 不允许下划线 _ 开头; 只能小写, 只能用连识符 - 连接
+  mixin-name-format: 0
+  # @mixin 混合声明必须在当前样式声明之前, 除了@mixin break()
+  mixins-before-declarations:
+    - 1
+    -
+      exclude: ['break']
+  # 嵌套深度 禁用
+  nesting-depth: 0
+  # 禁止属性选择器 禁用
+  no-attribute-selectors: 0
+  # 禁止用 color hex 值
+  no-color-hex: 0
+  # 禁止使用关键词 red 等
+  no-color-keywords: 0
+  # 禁止使用色值, 使用变量定义
+  no-color-literals: 0
+  # 禁止使用连接符
+  no-combinators: 1
+  # 强制注释单行
+  no-css-comments: 1
+  # 禁止 @debug
+  no-debug: 1
+  #
+  no-disallowed-properties: 0
+  # 属性禁止重复
+  no-duplicate-properties: 1
+  # 禁止样式为空
+  no-empty-rulesets: 1
+  # 禁止 @extends 禁用
+  no-extends: 0
+  # 禁止使用 id
+  no-ids: 0
+  # 禁止使用 !important
+  no-important: 0
+  # 禁止使用无效 hex 值
+  no-invalid-hex: 1
+  #
+  no-mergeable-selectors: 1
+  # 禁止错误属性
+  no-misspelled-properties: 1
+  #
+  no-qualifying-elements: 0
+  # 换行前不能有空格
+  no-trailing-whitespace: 1
+  # 尾部不可带无效 0
+  no-trailing-zero: 1
+  # 禁止 transition 中使用 all
+  no-transition-all: 0
+  # 禁止使用 * 通配 禁用
+  no-universal-selectors: 0
+  # url 中禁止使用域名
+  no-url-domains: 1
+  # url 中禁止使用协议
+  no-url-protocols: 1
+  # 属性禁止使用前缀
+  no-vendor-prefixes: 0
+  # 禁止 @warn
+  no-warn: 1
+  # 禁止样式一行声明
+  one-declaration-per-line: 1
+  # @extend 必须用占位符 % 定义
+  placeholder-in-extend: 1
+  # 占位符 % 命名格式 不允许下划线 _ 开头; 只能小写, 只能用连识符 - 连接
+  placeholder-name-format: 0
+  # 属性定义顺序 'alphabetical'按字符顺序, 'concentric同类', 'recess', 'smacss'
+  property-sort-order:
+    - 1
+    -
+      order: recess
+  # 单位规定
+  property-units:
+    - 1
+    -
+      global: ['px', 'rem', 's', etc]
+  # 伪类必须 :: 伪元素必须 :
+  pseudo-element: 0
+  # 必须单引号
+  quotes:
+    - 1
+    -
+      style: single
+  # 属性值能短则短
+  shorthand-values: 1
+  # 同级选择器单行还是换行 禁用
+  single-line-per-selector: 0
+  # 在 ! 后是否空格
+  space-after-bang: 0
+  # 冒号 : 后要有空格
+  space-after-colon:
+    - 1
+    -
+      include: true
+  # 逗号 , 后要有空格
+  space-after-comma:
+    - 1
+    -
+      include: true
+  # 运算符前后要有空格
+  space-around-operator:
+    - 1
+    -
+      include: true
+  # 在 ! 前是否空格
+  space-before-bang: 0
+  # 花括号 { 前要有空格
+  space-before-brace:
+    - 1
+    -
+      include: true
+  # 冒号 : 前不要有空格
+  space-before-colon:
+    - 1
+    -
+      include: false
+  # 函数的参数前后不要空格
+  space-between-parens:
+    - 1
+    -
+      include: false
+  # 块级中最后一个属性也要加分号
+  trailing-semicolon:
+    - 1
+    -
+      include: true
+  # url 中不需要加引号
+  url-quotes: 0
+  # 规定哪些属性需要以变量定义
+  variable-for-property: 0
+  # 变量命名格式 不允许下划线 _ 开头; 只能小写, 只能用连识符 - 连接
+  variable-name-format: 0
+  # 值为 0 不加单位
+  zero-unit:
+    - 1
+    -
+      include: false

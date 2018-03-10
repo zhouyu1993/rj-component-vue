@@ -1,0 +1,103 @@
+{
+  "name": "rj-component-vue",
+  "version": "0.9.9",
+  "description": "rainjoy font-end component library based on vue.js",
+  "keywords": "rainjoy,component,vue",
+  "author": "zhouyu1993",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:zhouyu1993/rj-component-vue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhouyu1993/rj-component-vue/issues",
+    "email": "1490079545@qq.com"
+  },
+  "homepage": "https://zhouyu1993.github.io/rjcv/",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "style": "lib/style.css",
+  "unpkg": "lib/index.js",
+  "module": "index.js",
+  "files": [
+    "lib",
+    "packages",
+    "index.js"
+  ],
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "lint": "eslint --ext .js,.vue src packages",
+    "build": "rm -rf dist && node build/build.js",
+    "deploy": "",
+    "contribute": "node prod/contribute.js",
+    "prod": "node prod/webpack.browser.conf.js"
+  },
+  "dependencies": {
+    "in-view": "^0.6.1",
+    "isomorphic-fetch": "^2.2.1",
+    "query-string": "^5.1.0",
+    "vue": "^2.5.13",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-component": "^1.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chalk": "^2.3.0",
+    "copy-webpack-plugin": "^4.3.1",
+    "css-loader": "^0.28.8",
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^4.0.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eventsource-polyfill": "^0.9.6",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "html-webpack-plugin": "^2.30.1",
+    "node-notifier": "^5.1.2",
+    "node-sass": "^4.7.2",
+    "optimize-css-assets-webpack-plugin": "^3.2.0",
+    "ora": "^1.3.0",
+    "portfinder": "^1.0.13",
+    "postcss-import": "^11.0.0",
+    "postcss-loader": "^2.0.10",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.6",
+    "script-ext-html-webpack-plugin": "^1.8.8",
+    "semver": "^5.4.1",
+    "shelljs": "^0.8.0",
+    "sw-precache-webpack-plugin": "^0.11.4",
+    "url-loader": "^0.6.2",
+    "vue-loader": "^13.7.0",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0",
+    "webpack-bundle-analyzer": "^2.9.1",
+    "webpack-dev-server": "2.7.1",
+    "webpack-merge": "^4.1.1"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 versions",
+    "ie >= 9",
+    "ios >= 8",
+    "android >= 4.2"
+  ]
+}

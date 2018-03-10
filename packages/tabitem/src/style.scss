@@ -1,0 +1,83 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-tabitem {
+  position: relative;
+  flex: 1;
+  padding: rem(10) rem(20);
+  color: $text-color-primary;
+
+  .rjcv-tabitem-info {
+    position: absolute;
+    top: rem(6);
+    right: rem(6);
+    z-index: 3;
+    padding: 0 rem(6);
+    font-size: $font-size-xxxs;
+    line-height: 1.2;
+    border-radius: rem(18);
+  }
+
+  &.rjcv-tabitem-disabled {
+    color: $mute-color;
+  }
+
+  &.rjcv-tabitem-style-0 {
+    background-color: #f9f9f9;
+
+    .rjcv-tabitem-info {
+      color: #fff;
+      background-color: $kw-color-primary;
+    }
+
+    &.rjcv-tabitem-hover {
+      font-weight: bold;
+      color: #fff;
+      background-color: $kw-color-primary;
+      animation: rjcv-tabitem-hover-0 .3s ease;
+
+      .rjcv-tabitem-info {
+        color: $special-color;
+        background-color: $tip-color;
+      }
+    }
+  }
+
+  &.rjcv-tabitem-style-1 {
+    background-color: #fff;
+
+    .rjcv-tabitem-info {
+      color: #fff;
+      background-color: $kw-color-assistant;
+    }
+
+    .rjcv-tabitem-text {
+      @include nativeborder(bottom, #fff, 1);
+      padding-bottom: rem(10);
+    }
+
+    &.rjcv-tabitem-hover {
+      color: $kw-color-primary;
+      animation: rjcv-tabitem-hover-1 .3s ease;
+
+      .rjcv-tabitem-info {
+        background-color: $kw-color-primary;
+      }
+
+      .rjcv-tabitem-text {
+        @include nativeborder(bottom, $kw-color-primary, 1);
+      }
+    }
+  }
+}
+
+@keyframes rjcv-tabitem-hover-0 {
+  0% {
+    background-color: #e7e7e7;
+  }
+
+  100% {
+    background-color: $kw-color-primary;
+  }
+}

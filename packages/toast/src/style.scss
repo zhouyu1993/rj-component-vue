@@ -1,0 +1,27 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2000;
+  padding: rem(30);
+  font-size: $font-size-l;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  word-break: break-all;
+  background-color: $popup-color;
+  border-radius: rem(20);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.rjcv-fade-enter-active, .rjcv-fade-leave-active {
+  transition: opacity .3s ease;
+}
+
+.rjcv-fade-enter, .rjcv-fade-leave-to {
+  opacity: 0!important;
+}

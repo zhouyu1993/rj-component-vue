@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- https://github.com/joshbuchea/HEAD -->
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="keywords" content="rainjoy,component,vue">
+  <meta name="description" content="rainjoy font-end component library based on vue.js">
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <!-- Safari 中识别 APP -->
+  <meta name="apple-itunes-app" content="app-id=?">
+  <!-- 添加到主屏幕后是否全屏模式，脱离 Safari 删除搜索框和工具栏 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- 添加到主屏幕后顶部状态条颜色 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- 添加到主屏幕后应用名称 -->
+  <meta name="apple-mobile-web-app-title" content="rj-component-vue">
+  <!-- 添加到主屏幕后应用图标 -->
+  <link rel="apple-touch-icon" href="https://zhouyu1993.github.io/rjcv/static/icon.png" type="image/png">
+  <link rel="icon" href="https://zhouyu1993.github.io/rjcv/static/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="https://zhouyu1993.github.io/rjcv/static/manifest.json">
+  <title>rj-component-vue</title>
+  <script>
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    (function () {
+      // Set fontSize for rem
+      function rem () {
+        var html = document.documentElement
+        var width = Math.min(html.getBoundingClientRect().width, 500)
+        var fontSize = width * 100 / 750 + 'px'
+        html.style.fontSize = fontSize
+      }
+      rem()
+      window.onresize = function () { rem() }
+
+      // Use ServiceWorker
+      var openServiceWorker = true
+      if (openServiceWorker) {
+        var dev = false
+        // ServiceWorker version
+        var v = '20180310'
+        var sw = dev ? '/service-worker.js?v=' : './service-worker.js?v='
+        var scope = dev ? '/' : '/rjcv/'
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function () {
+            navigator.serviceWorker.register(sw + v, {
+              scope: scope
+            }).then(function (registration) {
+              // Register success
+              console.log('ServiceWorker registration successful with scope:', registration.scope)
+
+              // Update ServiceWorker
+              if (localStorage.getItem('rjcv-sw-v') !== v) {
+                registration.update().then(function () {
+                  localStorage.setItem('rjcv-sw-v', v)
+                })
+              }
+            }).catch(function (err) {
+              // Register failure
+              console.log('ServiceWorker registration failed:', err)
+            })
+          })
+        }
+      }
+
+      // Add eruda
+      if (/rj_debug=on/.test(window.location)) {
+        document.write('<scr' + 'ipt src="https://cdn.jsdelivr.net/npm/eruda"></scr' + 'ipt>')
+        document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>')
+      }
+    })()
+  </script>
+</body>
+</html>

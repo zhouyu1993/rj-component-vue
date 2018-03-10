@@ -1,0 +1,17 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-button {
+  padding: rem(20);
+  font-family: $font-family;
+  font-size: $font-size-xl;
+  line-height: 1.5;
+  color: #fff;
+  word-break: break-all;
+  background-color: $kw-color-primary;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  appearance: none;
+}

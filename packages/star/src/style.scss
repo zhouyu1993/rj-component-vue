@@ -1,0 +1,56 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-star {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+
+  &-item {
+    position: relative;
+    z-index: 1;
+    margin-left: rem(15);
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.rjcv-star-hover {
+      .rjcv-icon {
+        &:nth-child(2) {
+          width: 100%;
+        }
+      }
+    }
+
+    &.rjcv-star-half {
+      .rjcv-icon {
+        &:nth-child(2) {
+          width: 50%;
+        }
+      }
+    }
+
+    .rjcv-icon {
+      display: block;
+      font-size: rem(50);
+
+      &:nth-child(1) {
+        color: $mute-color;
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 0;
+        overflow: hidden;
+        color: $kw-color-primary;
+      }
+    }
+  }
+}

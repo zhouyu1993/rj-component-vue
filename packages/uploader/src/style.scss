@@ -1,0 +1,137 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-uploader {
+  background-color: #fff;
+
+  .rjcv-uploader-tip {
+    font-size: $font-size-m;
+    line-height: 1;
+    color: $text-color-secondary;
+
+    span {
+      display: inline-block;
+      font-size: rem(24);
+      color: $kw-color-primary;
+      vertical-align: top;
+    }
+  }
+
+  .rjcv-uploader-core {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: rem(24);
+  }
+
+  .rjcv-uploader-pic {
+    position: relative;
+    z-index: 1;
+    width: rem(130);
+    height: rem(130);
+    margin-right: rem(10);
+    margin-bottom: rem(10);
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .icon-lajitong {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 3;
+      padding: rem(10);
+      font-size: rem(12);
+      line-height: 1;
+      color: #fff;
+      background-color: $popup-color;
+    }
+
+    .rjcv-uploader-state {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: rem(26);
+      color: #fff;
+      background-color: $popup-color;
+    }
+  }
+
+  .rjcv-uploader-upload {
+    @include border(all, $divide-color2, 0, 2px, dashed);
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    width: rem(130);
+    height: rem(130);
+    margin-right: rem(10);
+    margin-bottom: rem(10);
+    font-size: rem(80);
+
+    .icon-camera {
+      font-size: rem(50);
+      line-height: 1;
+      color: $text-color-assistant;
+    }
+
+    &-tip {
+      margin-top: rem(10);
+      font-size: rem(24);
+      color: $text-color-assistant;
+    }
+
+    &-plus {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 3;
+        width: rem(60);
+        height: 2px;
+        margin-top: -1px;
+        margin-left: rem(-30);
+        background-color: $divide-color;
+        content: ' ';
+      }
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 4;
+        width: 2px;
+        height: rem(60);
+        margin-top: rem(-30);
+        margin-left: -1px;
+        background-color: $divide-color;
+        content: ' ';
+      }
+    }
+  }
+
+  .rjcv-upload {
+    z-index: 5;
+  }
+
+  .rjcv-imagepreview-swiper {
+    text-align: center;
+  }
+}

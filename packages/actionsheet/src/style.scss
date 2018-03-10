@@ -1,0 +1,27 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-actionsheet {
+  .rjcv-actionsheet-title {
+    padding: rem(20);
+    color: $text-color-secondary;
+    background-color: #fff;
+  }
+
+  .rjcv-actionsheet-btn, .rjcv-actionsheet-action {
+    width: 100%;
+    color: $text-color-primary;
+    background-color: #fff;
+    border-radius: 0;
+  }
+
+  .rjcv-actionsheet-btn {
+    @include nativeborder();
+  }
+
+  .rjcv-actionsheet-action {
+    margin-top: rem(20);
+    color: $text-color-assistant;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-swiperitem {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+
+  &.rjcv-swiper-hover {
+    display: block;
+    transform: none;
+  }
+}

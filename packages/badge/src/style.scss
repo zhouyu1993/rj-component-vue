@@ -1,0 +1,10 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-badge {
+  font-size: $font-size-l;
+  line-height: 1.5;
+  text-align: center;
+  word-break: break-all;
+}

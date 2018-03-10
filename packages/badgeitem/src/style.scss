@@ -1,0 +1,51 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-badgeitem {
+  @include border(top);
+  padding: rem(30) rem(20);
+  color: $text-color-primary;
+  background-color: #f9f9f9;
+
+  .rjcv-badgeitem-info {
+    position: absolute;
+    top: rem(6);
+    right: rem(6);
+    z-index: 3;
+    padding: 0 rem(6);
+    font-size: $font-size-xxxs;
+    line-height: 1.2;
+    color: #fff;
+    background-color: $kw-color-primary;
+    border-radius: rem(18);
+  }
+
+  &.rjcv-tabitem-disabled {
+    color: $mute-color;
+  }
+
+  &.rjcv-badgeitem-hover {
+    font-weight: bold;
+    color: #fff;
+    background-color: $kw-color-primary;
+    animation: rjcv-badge-hover .3s ease;
+
+    .rjcv-badgeitem-info {
+      color: $special-color;
+      background-color: $tip-color;
+    }
+  }
+
+
+}
+
+@keyframes rjcv-badge-hover {
+  0% {
+    background-color: #e7e7e7;
+  }
+
+  100% {
+    background-color: $kw-color-primary;
+  }
+}

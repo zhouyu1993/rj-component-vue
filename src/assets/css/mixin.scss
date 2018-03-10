@@ -1,0 +1,92 @@
+@import './rem';
+
+@mixin text($line: 1, $height: 30, $fontSize: 24) {
+  overflow: hidden;
+  font-size: rem($fontSize);
+  text-overflow: ellipsis;
+
+  @if $line * $fontSize > $height {
+    height: rem($line * $fontSize);
+    line-height: 1;
+  } @else {
+    max-height: rem($height);
+    line-height: rem($height / $line);
+  }
+
+  @if $line == 1 {
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@mixin nativeborder($position: top, $color: #ddd, $size: 1) {
+  @if $position == top {
+    background-image: linear-gradient(to bottom, $color 50%, transparent 50%);
+    background-position: left top;
+    background-size: 100% $size + px;
+  } @else if $position == right {
+    background-image: linear-gradient(to left, $color 50%, transparent 50%);
+    background-position: right top;
+    background-size: $size + px 100%;
+  } @else if $position == bottom {
+    background-image: linear-gradient(to top, $color 50%, transparent 50%);
+    background-position: left bottom;
+    background-size: 100% $size + px;
+  } @else if $position == left {
+    background-image: linear-gradient(to right, $color 50%, transparent 50%);
+    background-position: left top;
+    background-size: $size + px 100%;
+  }
+
+  background-repeat: no-repeat;
+}
+
+@mixin border($position: all, $color: #ddd, $size: 1, $radius: 0, $style: solid, $z-index: 1, $pseudo: before) {
+  position: relative;
+  z-index: $z-index;
+  border-radius: rem($radius);
+
+  &::#{$pseudo} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $z-index + 1;
+    pointer-events: none;
+    content: ' ';
+    box-sizing: border-box;
+    transform-origin: left top;
+    @if $position == all {
+      border: $size + px $style $color;
+    } @else if $position == top {
+      border-top: $size + px $style $color;
+    } @else if $position == right {
+      border-right: $size + px $style $color;
+    } @else if $position == bottom {
+      border-bottom: $size + px $style $color;
+    } @else if $position == left {
+      border-left: $size + px $style $color;
+    } @else if $position == topLeft {
+      border-top: $size + px $style $color;
+      border-left: $size + px $style $color;
+    } @else if $position == topBottom {
+      border-top: $size + px $style $color;
+      border-bottom: $size + px $style $color;
+    }
+  }
+
+  $dpr-list: 1, 1.5, 2, 2.5, 3, 3.5, 4;
+
+  @each $dpr in $dpr-list {
+    @media only screen and (-webkit-min-device-pixel-ratio: $dpr) {
+      &::#{$pseudo} {
+        width: $dpr * 100%;
+        height: $dpr * 100%;
+        border-radius: rem($dpr * $radius);
+        transform: scale(1 / $dpr);
+      }
+    }
+  }
+}

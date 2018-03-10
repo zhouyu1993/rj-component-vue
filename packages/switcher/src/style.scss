@@ -1,0 +1,44 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-switcher {
+  position: relative;
+  width: rem(104);
+  height: rem(64);
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: rem(30);
+  outline: 0;
+  box-sizing: border-box;
+  transition: background-color 0.1s;
+  appearance: none;
+
+  &:disabled {
+    background-color: #fff;
+    opacity: .4;
+  }
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: rem(60);
+    height: rem(60);
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    content: ' ';
+    box-sizing: border-box;
+    transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+  }
+
+  &:checked {
+    background-color: $kw-color-secondary;
+    border-color: $kw-color-secondary;
+
+    &:after {
+      transform: translateX(rem(40));
+    }
+  }
+}

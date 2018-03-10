@@ -1,0 +1,48 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+$centerRadius: 1em;
+$itemWidth: .6em;
+$itemHeight: .15em;
+$width: $centerRadius + $itemWidth * 2;
+$height: $width;
+
+.rjcv-loadingicon {
+  position: relative;
+  width: $width;
+  height: $height;
+  font-size: $font-size-l;
+
+  &-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $itemWidth;
+    height: $itemHeight;
+    margin-top: $itemHeight / 2 * -1;
+    margin-left: $centerRadius / 2;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 1px;
+    transform-origin: ($centerRadius / 2 * -1) ($itemHeight / 2);
+
+    @for $i from 1 through 12 {
+      &:nth-child(#{$i}) {
+        transform: rotate(($i - 1) * 30deg);
+        animation: rjcv-loadingicon 1s linear infinite #{-1 + $i / 12}s;
+      }
+    }
+
+    @at-root {
+      @keyframes rjcv-loadingicon {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

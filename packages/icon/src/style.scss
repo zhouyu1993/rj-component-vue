@@ -1,0 +1,35 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+@font-face {
+  font-family: 'rjcv-iconfont';
+  src: url('../../__assets/font/iconfont.eot');
+  src: url('../../__assets/font/iconfont.eot?#iefix') format('embedded-opentype'), url('../../__assets/font/iconfont.woff') format('woff'), url('../../__assets/font/iconfont.ttf') format('truetype'), url('../../__assets/font/iconfont.svg') format('svg');
+}
+
+.rjcv-icon {
+  font-family: 'rjcv-iconfont';
+  font-style: normal;
+  vertical-align: top;
+
+  &.icon-camera:before { content: '\e60f'; }
+
+  &.icon-close:before { content: '\e60c'; }
+
+  &.icon-daohang:before { content: '\e610'; }
+
+  &.icon-flower:before { content: '\e604'; }
+
+  &.icon-kefu:before { content: '\e605'; }
+
+  &.icon-lajitong:before { content: '\e611'; }
+
+  &.icon-search:before { content: '\e612'; }
+
+  &.icon-starempty:before { content: '\e613'; }
+
+  &.icon-starfull:before { content: '\e60d'; }
+
+  &.icon-store:before { content: '\e60a'; }
+}

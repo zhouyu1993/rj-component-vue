@@ -1,0 +1,28 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-loading {
+  .rjcv-mask {
+    background-color: #fff;
+  }
+
+  .rjcv-popup-core {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: rem(20) rem(40);
+    background-color: $popup-color;
+    border-radius: rem(20);
+  }
+
+  .rjcv-loadingicon-item {
+    background-color: #fff;
+  }
+
+  .rjcv-loading-text {
+    padding-top: rem(20);
+    color: #fff;
+  }
+}

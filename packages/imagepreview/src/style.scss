@@ -1,0 +1,33 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-imagepreview {
+  .rjcv-mask {
+    background-color: #000;
+  }
+
+  .rjcv-popup-core {
+    width: 100%;
+    height: 80%;
+  }
+
+  .rjcv-imagepreview-swiper {
+    width: 100%;
+    height: 100%;
+
+    .rjcv-swiperitem {
+      display: flex!important;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .rjcv-imagepreview-tip {
+    text-align: center;
+  }
+}

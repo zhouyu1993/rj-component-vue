@@ -1,0 +1,27 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-tab {
+  display: flex;
+  font-size: $font-size-l;
+  line-height: 1.5;
+  text-align: center;
+  word-break: break-all;
+
+  &.rjcv-tab-sticky {
+    position: sticky;
+    top: 0;
+  }
+
+  &.rjcv-tab-scroll {
+    overflow-x: scroll;
+    // sass-lint:disable no-misspelled-properties
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: none;
+
+    .rjcv-tabitem {
+      flex: none;
+    }
+  }
+}

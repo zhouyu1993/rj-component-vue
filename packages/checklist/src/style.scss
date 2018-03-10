@@ -1,0 +1,78 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-checkbox {
+    font-size: rem(32);
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    user-select: none;
+    color: $text-color-assistant;
+
+    .rjcv-checkbox__input {
+        white-space: nowrap;
+        cursor: pointer;
+        outline: none;
+        display: inline-block;
+        line-height: 1;
+        position: relative;
+        vertical-align: top;
+    }
+
+    .rjcv-checkbox__inner {
+        display: inline-block;
+        position: relative;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        z-index: 1;
+        // transition: border-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46), background-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46);
+
+        &::after{
+            box-sizing: content-box;
+            content: "";
+            border: 1px solid #fff;
+            border-left: 0;
+            border-top: 0;
+            height: 8px;
+            left: 6px;
+            position: absolute;
+            top: 3px;
+            transform: rotate(45deg) scaleY(0);
+            width: 4px;
+            // transition: transform 0.15s cubic-bezier(0.71, -0.46, 0.88, 0.6) 0.05s;
+            // transform-origin: center;
+        }
+    }
+    .rjcv-checkbox__original {
+        opacity: 0;
+        outline: none;
+        position: absolute;
+        margin: 0;
+        width: 0;
+        height: 0;
+        left: -999px;
+    }
+    .rjcv-checkbox__label {
+        display: inline-block;
+        padding-left: 5px;
+        line-height: 19px;
+        font-size: 16px;
+    }
+    .rjcv-checkbox__input.is-checked{
+        .rjcv-checkbox__inner {
+            background-color: $kw-color-secondary;
+            border-color: $kw-color-secondary;
+        }
+        .rjcv-checkbox__inner::after {
+            transform: rotate(45deg) scaleY(1);
+        }
+        & + .rjcv-checkbox__label {
+            color: $kw-color-secondary;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-col {
+  &.rjcv-col-1 {
+    flex: 1;
+  }
+
+  &.rjcv-col-2 {
+    flex: 2;
+  }
+
+  &.rjcv-col-3 {
+    flex: 3;
+  }
+}

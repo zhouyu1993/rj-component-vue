@@ -1,0 +1,19 @@
+@import '../../__assets/css/mixin';
+@import '../../__assets/css/rem';
+@import '../../__assets/css/vars';
+
+.rjcv-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 2000;
+  width: rem(750);
+  font-size: $font-size-l;
+  line-height: 1.5;
+  color: #fff;
+  word-break: break-all;
+  background-color: $mask-color;
+  transform: translate3d(-50%, 0, 0);
+}
