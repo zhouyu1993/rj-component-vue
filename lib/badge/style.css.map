@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,YACE,gBAAkB,AAClB,gBAAiB,AACjB,kBAAmB,AACnB,oBAAsB,CACvB","file":"style.css","sourcesContent":["\n.rjcv-badge {\n  font-size: 0.3rem;\n  line-height: 1.5;\n  text-align: center;\n  word-break: break-all;\n}\n"]}

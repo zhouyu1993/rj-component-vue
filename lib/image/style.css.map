@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,YACE,eAAgB,AAChB,mBAAoB,AACpB,QAAU,CACX","file":"style.css","sourcesContent":["\n.rjcv-image {\n  max-width: 100%;\n  vertical-align: top;\n  border: 0;\n}\n"]}

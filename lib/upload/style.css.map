@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,aACE,kBAAmB,AACnB,MAAO,AACP,QAAS,AACT,SAAU,AACV,OAAQ,AACR,WAAY,AACZ,YAAa,AACb,YAAa,AACb,SAAW,CACZ","file":"style.css","sourcesContent":["\n.rjcv-upload {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  font-size: 0;\n  opacity: 0;\n}\n"]}

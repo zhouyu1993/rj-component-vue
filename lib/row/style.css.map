@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,UACE,oBAAqB,AACrB,qBAAsB,AACtB,oBAAqB,AACrB,YAAc,CACf","file":"style.css","sourcesContent":["\n.rjcv-row {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n}\n"]}
