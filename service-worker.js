@@ -1,6 +1,6 @@
 // sw version，
-var v = '2018010101'
-var CACHE_NAME = 'rjcv-sw-v' + v
+var version = '2018031201'
+var CACHE_NAME = 'rjcv-sw-v' + version
 
 var urlsToCache = [
   // '/'

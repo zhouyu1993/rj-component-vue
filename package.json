@@ -1,10 +1,9 @@
 {
   "name": "rj-component-vue",
   "version": "0.9.9",
-  "description": "rainjoy font-end component library based on vue.js",
-  "keywords": "rainjoy,component,vue",
+  "description": "font-end component library based on vue.js",
+  "keywords": "vue,component",
   "author": "zhouyu1993",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:zhouyu1993/rj-component-vue.git"

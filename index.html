@@ -43,23 +43,26 @@
       // Use ServiceWorker
       var openServiceWorker = true
       if (openServiceWorker) {
-        var dev = false
         // ServiceWorker version
-        var v = '2018031001'
+        var version = '2018031201'
+
+        // The scope of ServiceWorker
+        var dev = false
         var sw = dev ? '/service-worker.js?v=' : './service-worker.js?v='
         var scope = dev ? '/' : '/rjcv/'
+
         if ('serviceWorker' in navigator) {
           window.addEventListener('load', function () {
-            navigator.serviceWorker.register(sw + v, {
+            navigator.serviceWorker.register(sw + version, {
               scope: scope
             }).then(function (registration) {
               // Register success
               console.log('ServiceWorker registration successful with scope:', registration.scope)
 
               // Update ServiceWorker
-              if (localStorage.getItem('rjcv-sw-v') !== v) {
+              if (localStorage.getItem('rjcv-sw-v') !== version) {
                 registration.update().then(function () {
-                  localStorage.setItem('rjcv-sw-v', v)
+                  localStorage.setItem('rjcv-sw-v', version)
                 })
               }
             }).catch(function (err) {
