@@ -18,13 +18,7 @@ export default {
   },
   data () {
     return {
-      pictures: [
-        {
-          preview: 'http://wxmallpic-10004025.image.myqcloud.com/10c28a60-818f-4790-90f6-9fe303650c73',
-          state: '上传成功'
-        }
-      ],
-      value: 1,
+      pictures: [],
     }
   },
   methods: {

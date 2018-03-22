@@ -23,8 +23,6 @@
   <link rel="icon" href="https://zhouyu1993.github.io/rjcv/static/favicon.ico" type="image/x-icon">
   <link rel="manifest" href="https://zhouyu1993.github.io/rjcv/static/manifest.json">
   <title>rj-component-vue</title>
-  <script>
-  </script>
 </head>
 <body>
   <div id="app"></div>
@@ -43,18 +41,18 @@
       // Use ServiceWorker
       var openServiceWorker = true
       if (openServiceWorker) {
-        // ServiceWorker version
-        var version = '2018031201'
-
-        // The scope of ServiceWorker
-        var dev = false
-        var sw = dev ? '/service-worker.js?v=' : './service-worker.js?v='
-        var scope = dev ? '/' : '/rjcv/'
-
         if ('serviceWorker' in navigator) {
+          // ServiceWorker version
+          var version = '2018032101'
+
+          // The scope of ServiceWorker
+          var dev = false
+          var sw = dev ? '/service-worker.js?v=' : './service-worker.js?v='
+          var _scope = dev ? '/' : '/rjcv/'
+
           window.addEventListener('load', function () {
             navigator.serviceWorker.register(sw + version, {
-              scope: scope
+              scope: _scope
             }).then(function (registration) {
               // Register success
               console.log('ServiceWorker registration successful with scope:', registration.scope)

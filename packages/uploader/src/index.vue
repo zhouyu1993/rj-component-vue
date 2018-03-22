@@ -138,7 +138,7 @@ export default {
       if (data.progress === 0 && data.fd) {
         this.reload = data
       } else {
-        this.previews = this.pics.filter((pic) => {
+        this.previews = this.pics.map((pic) => {
           return pic.preview
         })
         this.visible = true
