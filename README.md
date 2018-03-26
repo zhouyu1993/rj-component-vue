@@ -53,3 +53,81 @@
 | scroll | 滚动指令 | 1 | ✅ |
 | title | 修改页面标题 | 1 | ✅ |
 | xhtml | 富文本处理 | 1 | ✅ |
+
+# USE
+
+## Install
+
+npm install === yarn add
+
+``` bash
+npm install -S rj-component-vue
+```
+
+``` bash
+npm install git+https://github.com/zhouyu1993/rj-component-vue.git
+```
+
+或者
+
+``` bash
+npm install git+ssh://git@github.com:zhouyu1993/rj-component-vue.git
+```
+
+## Import all components
+
+``` js
+import Vue from 'vue'
+import rjcv from 'rj-component-vue'
+
+Vue.use(rjcv)
+```
+
+## Import specific component
+
+``` js
+import Vue from 'vue'
+import Test from 'rj-component-vue/lib/Test'
+
+import 'rj-component-vue/lib/Test/style.css'
+
+Vue.component(Test.name, Test)
+```
+
+**⚠️Use[babel-plugin-component](https://www.npmjs.com/package/babel-plugin-component)**
+
+- Auto import css file
+- Modular import component
+
+### Install babel-plugin-component
+
+``` bash
+npm install -D babel-plugin-component
+```
+
+### Set the configuration of babel-plugin-component in .babelrc
+
+``` json
+{
+  "plugins": [
+    [
+      "component",
+      [
+        {
+          "libraryName": "rj-component-vue",
+          "style": true
+        }
+      ]
+    ]
+  ]
+}
+```
+
+### Then import rj-component-vue
+
+``` js
+import Vue from 'vue'
+import { Test } from 'rj-component-vue'
+
+Vue.component(Test.name, Test)
+```
