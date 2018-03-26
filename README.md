@@ -94,7 +94,7 @@ import 'rj-component-vue/lib/Test/style.css'
 Vue.component(Test.name, Test)
 ```
 
-**⚠️Use[babel-plugin-component](https://www.npmjs.com/package/babel-plugin-component)**
+**⚠️Use [babel-plugin-component](https://www.npmjs.com/package/babel-plugin-component)**
 
 - Auto import css file
 - Modular import component
