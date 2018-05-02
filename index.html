@@ -19,9 +19,9 @@
   <!-- 添加到主屏幕后应用名称 -->
   <meta name="apple-mobile-web-app-title" content="rj-component-vue">
   <!-- 添加到主屏幕后应用图标 -->
-  <link rel="apple-touch-icon" href="https://zhouyu1993.github.io/rjcv/static/icon.png" type="image/png">
-  <link rel="icon" href="https://zhouyu1993.github.io/rjcv/static/favicon.ico" type="image/x-icon">
-  <link rel="manifest" href="https://zhouyu1993.github.io/rjcv/static/manifest.json">
+  <link rel="apple-touch-icon" href="https://zhouyu1993.github.io/awesome/rjcv/static/icon.png" type="image/png">
+  <link rel="icon" href="https://zhouyu1993.github.io/awesome/rjcv/static/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="https://zhouyu1993.github.io/awesome/rjcv/static/manifest.json">
   <title>rj-component-vue</title>
 </head>
 <body>
@@ -42,27 +42,17 @@
       var openServiceWorker = true
       if (openServiceWorker) {
         if ('serviceWorker' in navigator) {
-          // ServiceWorker version
-          var version = '2018032101'
-
           // The scope of ServiceWorker
           var dev = false
           var sw = dev ? '/service-worker.js?v=' : './service-worker.js?v='
-          var _scope = dev ? '/' : '/rjcv/'
+          var _scope = dev ? '/' : '/awesome/rjcv/'
 
           window.addEventListener('load', function () {
-            navigator.serviceWorker.register(sw + version, {
+            navigator.serviceWorker.register(sw, {
               scope: _scope
             }).then(function (registration) {
               // Register success
               console.log('ServiceWorker registration successful with scope:', registration.scope)
-
-              // Update ServiceWorker
-              if (localStorage.getItem('rjcv-sw-v') !== version) {
-                registration.update().then(function () {
-                  localStorage.setItem('rjcv-sw-v', version)
-                })
-              }
             }).catch(function (err) {
               // Register failure
               console.log('ServiceWorker registration failed:', err)

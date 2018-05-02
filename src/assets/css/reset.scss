@@ -1,139 +1,95 @@
-html,
-body {
-  // 设置页面的 offsetHeight 值为屏幕高度
-  height: 100%;
-}
-
-html {
-  // 禁止 x 轴滚动
-  overflow-x: hidden;
-  // 允许 y 轴滚动
-  overflow-y: scroll;
-  // 字体大小 100%
-  text-size-adjust: 100%;
-  // 字体禁选
-  user-select: none;
-  // 浏览器只允许进行滚动和持续缩放操作，禁止双击缩放
-  touch-action: manipulation;
-  // 字体灰介平滑 -webkit- 私有
-  -webkit-font-smoothing: antialiased;
-  // 可点击元素的高亮颜色 -webkit- 私有
-  -webkit-tap-highlight-color: transparent;
-  // 使用滚动回弹效果
-  // sass-lint:disable no-misspelled-properties
-  -webkit-overflow-scrolling: touch;
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: 12px;
-  line-height: 1.5;
-  color: #121212;
-  word-break: break-all;
-}
-
-// button, input, select, textarea {
-//   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-//   font-size: 12px;
-//   line-height: 1.5;
-//   color: #121212;
-//   background-color: #fff;
-//   border-radius: 0;
-//   appearance: none;
-// }
-//
-// dd, dl, figure, h1, h2, h3, h4, h5, h6, ol, p, ul {
-//   margin: 0;
-// }
-//
-// button, input, ol, textarea, ul {
-//   padding: 0;
-// }
-//
-// a, button, em , i, iframe, img, input, select, textarea {
-//   vertical-align: top;
-// }
-//
-// button, iframe, img, input, select, textarea {
-//   border: 0;
-// }
-//
-// textarea {
-//   resize: none;
-// }
-//
-// ol, ul {
-//   list-style-type: none;
-// }
-//
-a {
-  color: #121212;
-  text-decoration: none;
-}
-//
-// address, em , i {
-//   font-style: normal;
-// }
-//
-// img {
-//   max-width: 100%;
-// }
-//
-// h1, h2, h3, h4, h5, h6 {
-//   font-weight: 400;
-// }
-//
-// // 元素的内边距和边框将在已设定的宽度和高度内进行绘制
-// * {
-//   box-sizing: border-box;
-// }
-//
-// ::before {
-//   box-sizing: border-box;
-// }
-//
-// ::after {
-//   box-sizing: border-box;
-// }
-
-// 隐藏滚动条
+// 隐藏滚动条  -webkit- 私有
 ::-webkit-scrollbar {
   display: none;
 }
 
-// // 获取焦点的元素无外边框
-// :focus {
-//   outline: 0;
-// }
-//
-// // 可输入元素的字段预期值的提示信息
-// ::-webkit-input-placeholder {
-//   color: #999;
-// }
-//
-// ::-moz-placeholder {
-//   color: #999;
-// }
-//
-// :-ms-input-placeholder {
-//   color: #999;
-// }
-//
-// // 去除搜索按钮的清除按钮
-// ::-webkit-search-cancel-button {
-//   appearance: none;
-// }
-//
-// // 重置上传按钮样式
-// ::-webkit-file-upload-button {
-//   padding: 0;
-//   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-//   font-size: 12px;
-//   color: #121212;
-//   vertical-align: top;
-//   background-color: #fff;
-//   border: 1px solid #ddd;
-//   border-radius: 0;
-//   outline: 0;
-// }
+// IE 9+ 简化盒模型计算，忽略 padding
+
+* {
+  box-sizing: border-box;
+}
+
+::before {
+  box-sizing: border-box;
+}
+
+::after {
+  box-sizing: border-box;
+}
+
+// offsetHeight 为屏幕高度
+html,
+body {
+  height: 100%;
+}
+
+html {
+  // 禁止横行滚动
+  overflow-x: hidden;
+  overflow-y: scroll;
+  // 字体禁选 -webkit-
+  -webkit-user-select: none;
+  // 字体大小 100% -webkit-
+  -webkit-text-size-adjust: 100%;
+  // 字体灰介平滑 -webkit- 私有
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 12px;
+  line-height: 1.5;
+  color: #121212;
+  background-color: #fff;
+}
+
+:focus, body {
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body, button, h1, h2, h3, h4, h5, h6, input, p, textarea, ol, ul {
+  padding: 0;
+  margin: 0;
+}
+
+button, input, select {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 12px;
+  line-height: 1;
+  color: #121212;
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 400;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  color: #121212;
+  text-decoration: none;
+}
+
+i, em {
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
