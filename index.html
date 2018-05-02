@@ -42,17 +42,27 @@
       var openServiceWorker = true
       if (openServiceWorker) {
         if ('serviceWorker' in navigator) {
-          // The scope of ServiceWorker
+          /// The scope of ServiceWorker
           var dev = false
-          var sw = dev ? '/service-worker.js?v=' : './service-worker.js?v='
+          var sw = dev ? '/service-worker.js?v=' : '//zhouyu1993.github.io/awesome/rjcv/service-worker.js?v='
           var _scope = dev ? '/' : '/awesome/rjcv/'
 
+          // ServiceWorker version
+          var version = '2018050203'
+
           window.addEventListener('load', function () {
-            navigator.serviceWorker.register(sw, {
+            navigator.serviceWorker.register(sw + version, {
               scope: _scope
             }).then(function (registration) {
               // Register success
               console.log('ServiceWorker registration successful with scope:', registration.scope)
+
+              // Update ServiceWorker
+              if (localStorage && localStorage.getItem('rjcv-sw-v') !== version) {
+                registration.update().then(function () {
+                  localStorage.setItem('rjcv-sw-v', version)
+                })
+              }
             }).catch(function (err) {
               // Register failure
               console.log('ServiceWorker registration failed:', err)

@@ -3,20 +3,20 @@ import components from '../../prod/components.json'
 const routes = components.map(component => {
   let path = `/${component}`
   let name = component
-  let route
+  let route = async () => await import(`./${component}`)
+
   if (component === 'index') {
     path = '/'
     name = 'home'
-    route = async () => await import('./home/index.vue')
+    route = async () => await import('./home')
   } else if (component === 'badgeitem') {
-    route = async () => await import('./badge/index.vue')
+    route = async () => await import('./badge')
   } else if (component === 'swiperitem') {
-    route = async () => await import('./swiper/index.vue')
+    route = async () => await import('./swiper')
   } else if (component === 'tabitem') {
-    route = async () => await import('./tab/index.vue')
-  } else {
-    route = async () => await import(`./${name}/index.vue`)
+    route = async () => await import('./tab')
   }
+
   return {
     path,
     name,

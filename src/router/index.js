@@ -12,7 +12,7 @@ Vue.use(Router)
 */
 
 const router = new Router({
-  base: '/rjcv/', // rjcv
+  base: '/rjcv/', // set base for your project
   // mode: 'history',
   routes,
   scrollBehavior (to, from, savedPosition) {
