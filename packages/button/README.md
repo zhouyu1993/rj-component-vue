@@ -24,7 +24,7 @@ Vue.component(button.name, button)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/button)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/button)
 
 ``` html
 <rjcv-button @click.native="open(1)">🐶点我🐶</rjcv-button>

@@ -23,7 +23,7 @@ Vue.directive('xhtml', xhtml)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/xhtml)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/xhtml)
 
 ``` html
 <template>

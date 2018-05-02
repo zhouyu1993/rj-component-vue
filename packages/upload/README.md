@@ -24,7 +24,7 @@ Vue.component(upload.name, upload)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/upload)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/upload)
 
 ``` html
 <rjcv-upload accept="image/*" :rest="9" @uploadResponse="uploadResponse" />

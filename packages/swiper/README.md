@@ -27,7 +27,7 @@ Vue.component(swiperitem.name, swiperitem)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/swiper)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/swiper)
 
 ``` html
 <rjcv-swiper class="swiper-wraper">

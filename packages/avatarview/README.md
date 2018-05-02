@@ -24,7 +24,7 @@ Vue.prototype.$$avatarview = avatarview
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/avatarview)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/avatarview)
 
 ``` html
 <img :src="'' | avatarview(300, 160)">

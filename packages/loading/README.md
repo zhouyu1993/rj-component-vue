@@ -24,7 +24,7 @@ Vue.component(loading.name, loading)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/loading)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/loading)
 
 ``` html
 <rjcv-loading :visible="visible" text="玩命儿赶来~" />

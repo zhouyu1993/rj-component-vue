@@ -23,7 +23,7 @@ Vue.prototype.$$title = title
 
 ## Example
 
-[Example 传送门](https://zhouyu1993.github.io/rjcv/#/title)
+[Example 传送门](https://zhouyu1993.github.io/awesome/rjcv/#/title)
 
 ``` js
 this.$$title('这是新标题')

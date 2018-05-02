@@ -26,7 +26,7 @@ Vue.prototype.$$loading = loadingmethod(Vue)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/loadingmethod)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/loadingmethod)
 
 ``` js
 export default {

@@ -27,7 +27,7 @@ Vue.component(tabitem.name, tabitem)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/tab)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/tab)
 
 ``` html
 <rjcv-tab @tabClick="handleTabClick">

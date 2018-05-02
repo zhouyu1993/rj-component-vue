@@ -23,7 +23,7 @@ Vue.directive('scroll', scroll)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/scroll)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/scroll)
 
 ``` html
 <div v-scroll="scrollFun"></div>

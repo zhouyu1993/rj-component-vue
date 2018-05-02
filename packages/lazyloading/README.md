@@ -23,7 +23,7 @@ Vue.directive('lazyloading', lazyloading)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/lazyloading)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/lazyloading)
 
 ``` html
 <image v-lazyloading="update" :lazy-src="src" :lazy-el="el" :lazy-defaultSrc="defaultSrc">

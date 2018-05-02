@@ -27,7 +27,7 @@ export default {
   data () {
     return {
       response: {},
-      poster: 'https://zhouyu1993.github.io/rjcv/static/icon.png',
+      poster: 'https://zhouyu1993.github.io/awesome/rjcv/static/icon.png',
       preview: false,
     }
   },

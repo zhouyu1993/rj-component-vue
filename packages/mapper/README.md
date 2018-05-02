@@ -24,7 +24,7 @@ Vue.component(mapper.name, mapper)
 
 ## Example
 
-[Example 传送门](https://zhouyu1993.github.io/rjcv/#/mapper)
+[Example 传送门](https://zhouyu1993.github.io/awesome/rjcv/#/mapper)
 
 ### 根据 ip 地址定位并绘制地图
 

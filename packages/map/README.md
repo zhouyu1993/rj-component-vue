@@ -23,7 +23,7 @@ Vue.prototype.$$map = map
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/map)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/map)
 
 ``` html
 <rjcv-button @click.native="open1">open</rjcv-button>

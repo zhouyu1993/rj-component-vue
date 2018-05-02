@@ -23,7 +23,7 @@ Vue.prototype.$$asyncload = asyncload
 
 ## Example
 
-[Example 传送门](https://zhouyu1993.github.io/rjcv/#/asyncload)
+[Example 传送门](https://zhouyu1993.github.io/awesome/rjcv/#/asyncload)
 
 ``` js
 async loadjquery () {

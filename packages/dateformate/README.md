@@ -24,7 +24,7 @@ Vue.prototype.$$dateformate = dateformate
 
 ## Example
 
-[Example 传送门](https://zhouyu1993.github.io/rjcv/#/dateformate)
+[Example 传送门](https://zhouyu1993.github.io/awesome/rjcv/#/dateformate)
 
 ``` html
 <p>{{date | dateformate(format, original}}</p>

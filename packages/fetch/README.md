@@ -23,7 +23,7 @@ Vue.prototype.$$fetch = fetch
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/fetch)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/fetch)
 
 
 ``` js

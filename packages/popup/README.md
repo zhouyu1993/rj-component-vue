@@ -24,7 +24,7 @@ Vue.component(popup.name, popup)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/popup)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/popup)
 
 ``` html
 <rjcv-popup v-model="visible2" :visible="visible2" position="bottom" @mask="mask">

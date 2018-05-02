@@ -1,7 +1,7 @@
 <template>
   <div class="demo-head">
-    <a href="https://zhouyu1993.github.io/rjcv/">
-      <img class="logo" src="https://zhouyu1993.github.io/rjcv/static/icon.png">
+    <a href="https://zhouyu1993.github.io/awesome/rjcv/">
+      <img class="logo" src="https://zhouyu1993.github.io/awesome/rjcv/static/icon.png">
     </a>
     <h1 class="name">{{$route.name}}</h1>
   </div>

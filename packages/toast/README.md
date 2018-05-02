@@ -26,7 +26,7 @@ Vue.prototype.$$toast = toast(Vue)
 
 ## Example
 
-[Example 传送门](//zhouyu1993.github.io/rjcv/#/toast)
+[Example 传送门](//zhouyu1993.github.io/awesome/rjcv/#/toast)
 
 ``` js
 export default {

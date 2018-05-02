@@ -2,14 +2,14 @@
   "name": "rj-component-vue",
   "short_name": "rjcv",
   "description": "rainjoy font-end component library based on vue.js",
-  "start_url": "//zhouyu1993.github.io/rjcv/?eruda=true",
+  "start_url": "//zhouyu1993.github.io/awesome/rjcv/?rj_debug=on",
   "theme_color": "#ff397e",
   "background_color": "#fff",
   "orientation": "portrait",
   "display": "standalone",
   "icons": [
     {
-      "src": "//zhouyu1993.github.io/rjcv/static/icon.png",
+      "src": "//zhouyu1993.github.io/awesome/rjcv/static/icon.png",
       "type": "image/png",
       "sizes": "80x80"
     }
