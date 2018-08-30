@@ -58,9 +58,9 @@ export default {
 | fileRegExp | String | 文件类型正则检测 | false | [见下面](#fileregexp) |
 | maxWidth | Number | 图片上传，图片最大宽度，如果真实宽度大于这个值，会进行缩小 | false  | 800 |
 | quality | Number | 图片上传, 图片压缩质量比 0-1 | false | 0.7 |
-| imageUploadUrl | String | 图片上传接口 | false | //ims.cekid.com/pic/file/upload.do?bucket=wxmallpic |
+| imageUploadUrl | String | 图片上传接口 | false | - |
 | timeout | Number | 图片上传超时处理，默认 10000（ms） | false | 10000 |
-| signatureUrl | String | 视频上传时，获取签名的接口  | false | //appdata.cekid.com/vvideo/upload?app=h5&source=shequ |
+| signatureUrl | String | 视频上传时，获取签名的接口  | false | - |
 | appid | Number, String | 视频上传，appid 必填参数 | false | 10004025 |
 | bucket | String | 视频上传，bucket 必填参数 | false | shequvideo |
 | region | String | 视频上传，region 必填参数 华南填 gz 华东填 sh 华北填 tj | false | sh |

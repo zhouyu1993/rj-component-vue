@@ -1,8 +1,11 @@
 {
   "name": "rj-component-vue",
-  "version": "0.9.12",
+  "version": "1.0.0",
   "description": "font-end component library based on vue.js",
-  "keywords": "vue,component",
+  "keywords": [
+    "vue",
+    "component"
+  ],
   "author": "zhouyu1993",
   "repository": {
     "type": "git",

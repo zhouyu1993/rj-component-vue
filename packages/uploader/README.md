@@ -55,7 +55,7 @@ export default {
 | imageRegExp | String | 正则检测图片类型 | false | bmp|gif|jp(e?)g|png|webp |
 | maxWidth | Number | 图片上传，图片最大宽度，如果真实宽度大于这个值，会进行缩小 | false  | 800 |
 | quality | Number | 图片上传, 图片压缩质量比 0-1 | false | 0.7 |
-| imageUploadUrl | String | 图片上传接口 | false | //ims.cekid.com/pic/file/uploader.do?bucket=wxmallpic |
+| imageUploadUrl | String | 图片上传接口 | false | - |
 | timeout | Number | 图片上传超时处理，默认 10000（ms） | false | 10000 |
 | pictures | Array | 上传成功的图片信息列表 | false | 空数组 |
 

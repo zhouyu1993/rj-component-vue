@@ -56,7 +56,7 @@ export default {
     // 图片上传接口
     imageUploadUrl: {
       type: String,
-      default: '//ims.cekid.com/pic/file/upload.do?bucket=wxmallpic'
+      default: ''
     },
     // 图片上传超时处理，默认 10000（ms）
     timeout: {
@@ -66,7 +66,7 @@ export default {
     // 视频上传时，获取签名的接口
     signatureUrl: {
       type: String,
-      default: '//appdata.cekid.com/vvideo/upload?app=h5&source=shequ'
+      default: ''
     },
     // 视频上传，appid 必填参数
     appid: {

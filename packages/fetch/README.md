@@ -31,7 +31,7 @@ methods: {
   async getData () {
     try {
       const json = await this.$$fetch(
-        '//recommend.cekid.com/recommendsvc/RmdInHomePage',
+        '//x.com',
         {
           versio: 'v1',
           source: 2,

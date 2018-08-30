@@ -1,5 +1,5 @@
 const api = {
-  cms: '//cms.cekid.com/publish'
+  cms: '//x.com'
 }
 
 export default api

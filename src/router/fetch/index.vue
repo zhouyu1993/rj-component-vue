@@ -25,7 +25,7 @@ export default {
     async fetch1 () {
       try {
         const json = await this.$$fetch(
-          '//recommend.cekid.com/recommendsvc/RmdInHomePage',
+          'x',
           {
             versio: 'v1',
             source: 2,

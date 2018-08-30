@@ -59,7 +59,7 @@ export default {
     },
     imageUploadUrl: {
       type: String,
-      default: '//ims.cekid.com/pic/file/upload.do?bucket=wxmallpic'
+      default: ''
     },
     imageUploadSuccessCode: {
       type: Number,

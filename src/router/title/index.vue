@@ -26,7 +26,7 @@ export default {
   methods: {
     async fetchTitle () {
       try {
-        await this.$$fetch('//cms.cekid.com/publish/998/newindex2017.json')
+        await this.$$fetch('//x.com')
         this.$$title('这是fetchTitle')
       } catch (e) {
         console.log(e)
